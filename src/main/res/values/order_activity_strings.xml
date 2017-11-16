@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="to_shopping_cart_btn_txt">Zum Warenkorb</string>
+    <string name="no_orders_explanation_txt">Sie haben noch keine Bestellungen aufgegeben. Nach erfolgreicher Bestellung können Sie hier ihre Bestellungen einsehen. Sie können im Warenkorb, ihre ausgewählten Artikel bestellen.</string>
+</resources>

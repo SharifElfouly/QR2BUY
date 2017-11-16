@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/order_custom_list_article_image"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:padding="10dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:id="@+id/order_custom_list_article_info"
+        android:layout_toRightOf="@+id/order_custom_list_article_image"
+        android:layout_marginLeft="8dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Titel"
+            android:textSize="19sp"
+            android:textColor="@color/white"
+            android:id="@+id/order_custom_list_article_name"
+            android:gravity="center|left"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/order_custom_list_order_position_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="right|center"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_alignBottom="@+id/order_custom_list_article_pricing"
+        android:layout_alignTop="@+id/order_custom_list_article_pricing">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/order_custom_list_article_price"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/order_custom_list_article_amount"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/order_custom_list_article_sum_price"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/order_custom_list_article_pricing"
+        android:orientation="vertical"
+        android:gravity="right|center"
+        android:layout_marginRight="22dp"
+        android:layout_marginEnd="22dp"
+        android:layout_alignTop="@+id/order_custom_list_article_image"
+        android:layout_toLeftOf="@+id/order_custom_list_order_position_info"
+        android:layout_toStartOf="@+id/order_custom_list_order_position_info"
+        android:layout_alignBottom="@+id/order_custom_list_article_image">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Preis:"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Menge:"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Summe:"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

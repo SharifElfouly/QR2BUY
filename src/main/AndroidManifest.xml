@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="swp.shafou.qr2buy">
+
+    <!--
+    - Jede Aktivität besitzt das Attribut android:screenOrientaion:"portrait", das heißt die gesamte
+    App wurde für den Gebrauch im Portrait Modus konzipiert.
+    -->
+
+    <!--
+    - Die Applikation muss Zugang zur Kamera und Internet haben
+    - Die Applikation muss den Zusatand des Netzwerkes abfragen können
+    -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Activities.StartAnimationActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"
+            android:noHistory="true">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activities.HomeActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".Activities.SettingsActivity"
+            android:parentActivityName=".Activities.HomeActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Activities.OrdersActivity"
+            android:parentActivityName=".Activities.HomeActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Activities.AboutUsActivity"
+            android:parentActivityName=".Activities.HomeActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Activities.SignInActivity"
+            android:parentActivityName=".Activities.HomeActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Activities.ShoppingCartActivity"
+            android:parentActivityName=".Activities.HomeActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Activities.LoginActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".Activities.ScannerActivity"
+            android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="to_scanner_btn">Zum Scanner</string>
+    <string name="no_articles_in_shopping_cart_explanation_txt">Sie haben noch keine Artikel in den Warenkorb gelegt. Um Artikel in den Warenkorb zu legen, müssen Sie den Qr Code eines Artikels scannen.</string>
+</resources>
