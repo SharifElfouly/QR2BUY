@@ -1,2 +1,2 @@
 # QR2BUY
-A QR Scanner with shopping cart and network functionalities
+Android QR scanner application with network functionalities
